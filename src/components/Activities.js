@@ -2,7 +2,7 @@ import React from 'react';
 
 function Activities(){
   return (
-    <section id="activities">
+    <section id="activities"  className="full-page">
       <div className="overlay"></div>
 
       <div className="row section-intro">

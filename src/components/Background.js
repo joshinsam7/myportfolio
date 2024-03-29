@@ -2,7 +2,7 @@ import React from 'react';
 
 function Background(){
   return (
-    <section id="resume">
+    <section id="resume" className="full-page">
       <div className="row section-intro">
         <div className="col-twelve">
           <h5>Resume</h5>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects (){
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="full-page">
       <div className="row section-intro">
          <div className="col-twelve">
             <h5>Projects</h5>
@@ -19,7 +19,7 @@ function Projects (){
          </div> {/* twelve columns end */}
       </div> {/* row end */}
     </section>
-  );
+  ); 
 };
 
 export default Projects;

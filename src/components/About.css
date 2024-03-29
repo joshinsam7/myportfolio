@@ -1,0 +1,169 @@
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+}
+
+#about .section-intro {
+    margin-bottom: 3rem;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto; /* Combined margin declaration */
+    text-align: center;
+    margin-bottom: 3.6rem;
+    position: relative;
+}
+
+.section-intro h5 {
+    color: #F06000;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+}
+
+.section-intro h1 {
+    font-family: 'opensans-bold', sans-serif;
+    font-size: 3.6rem;
+    color: #FFFFFF;
+    line-height: 1.25;
+    margin-bottom: 1.2rem; /* Removed redundant color property */
+}
+
+.row {
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto; /* Combined margin declaration */
+    margin-bottom: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro-info {
+    margin-top: 4.2rem;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.intro-info img {
+    height: 12rem;
+    width: 12rem;
+    border: 1px solid #F06000;
+    border-radius: 50%;
+    margin: 0.9rem 1rem 0 2rem;
+    float: left;
+}
+
+body {
+    font-family: 'opensans-regular', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #838C95;
+    -webkit-text-size-adjust: 100%;
+}
+
+.intro-info .lead {
+    text-align: left;
+    padding-left: 13rem;
+}
+
+.about-content {
+    position: relative;
+    text-align: left;
+    max-width: 850px;
+    margin-bottom: 3.6rem;
+}
+
+.intro-info .lead {
+    text-align: left;
+    padding-left: 13rem;
+}
+
+p.lead {
+    font-family: "lora-regular", serif;
+    font-size: 2rem;
+    line-height: 1.7;
+    color: #888888;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0 0 30px 0;
+}
+
+.about-content h3 {
+    font-family: 'opensans-bold', sans-serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+.about-content .info-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.about-content .info-list li {
+    padding: 0 0 1.5rem 0;
+    margin-bottom: .6rem;
+}
+
+.about-content .info-list li strong {
+    font-family: 'opensans-bold', sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.about-content .info-list li span {
+    display: block;
+    font-family: 'opensans-bold', sans-serif;
+    color: #888888;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.about-content .skill-bars {
+    margin-top: 6rem;
+}
+
+.button-section {
+    text-align: center;
+}
+
+.button-section .button {
+    width: 250px;
+}
+
+.button-section [class*="col-"] .button:first-child {
+    margin-right: 4rem;
+}
+
+.skill-bars {
+    list-style: none;
+    margin: 6rem 0 3rem;
+}
+
+.skill-bars li {
+    height: .6rem;
+    background: #313131;
+    width: 100%;
+    margin-bottom: 6rem;
+}

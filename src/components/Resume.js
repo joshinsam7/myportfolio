@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Resume = () => {
+
+function Resume() {
   return (
-    <section id="resume">
+
+    <section id="resume" className="full-page" style={{ paddingTop: '80px', overflowX: 'hidden' }}>
       <div className="row section-intro">
         <div className="col-twelve">
           <h5>Resume</h5>
