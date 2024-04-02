@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
+import React, { useState } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import About from "./components/About";
 import Activities from "./components/Activities";
-import Background from "./components/Background";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -10,6 +10,9 @@ import Resume from "./components/Resume";
 import "./App.css";
 
 function App() {
+    
+  const [isNavbarActive, setIsNavbarActive] = useState(false);
+
     return (
       <Router>
         <main>
@@ -23,11 +26,10 @@ function App() {
               content="width=device-width, initial-scale=1, maximum-scale=1"
             />
           </Helmet>
-
-          <Navbar />
-          <About />
-          <Resume />
-          <Background />
+          
+          <Navbar setIsNavbarActive={setIsNavbarActive} />
+          <About  isNavbarActive={isNavbarActive} />
+          <Resume /> {/* Only one instance */}
           <Projects />
           <Activities />
           <Contact />

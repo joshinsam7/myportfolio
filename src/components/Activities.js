@@ -17,18 +17,17 @@ function Activities(){
          <div className="twelve columns main-col">
             <div className="row item">
                <div className="twelve columns">
-                  <h3>Founder/Co-President</h3>
-                  <p className="info">Stanford Transhumanist Association<span>&bull;</span> <em className="date">March 2018 - Present</em></p>
                   <p>
-                    Organized executive board members & meeting. <br />
-                    Designed STA discussion event posters. <br />
-                    Took record of STA meeting & discussion. <br />
-                    Recruited Stanford students into club members. 
+
                   </p>
                </div>
             </div>
 
-            {/* Repeat the above block for each activity item */}
+            {
+            
+            /* Repeat the above block for each activity item */
+            
+            }
             
          </div>
       </div> 

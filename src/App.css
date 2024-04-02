@@ -1,6 +1,11 @@
 body { 
     background: black; 
     overflow-x: hidden; 
+    margin: 0;
+}
+
+.resume_page {
+    background-color: white;
 }
 
 .grey-section {
@@ -10,6 +15,7 @@ body {
     font-family:'librebaskerville-regular', serif;
     color: #7d7d7d;
   }
+
   .section-intro {
     max-width: 700px;
     margin-left: auto;
@@ -18,13 +24,7 @@ body {
     margin-bottom: 3.6rem;
     position: relative;
   }
-  .section-intro h1 {
-    font-family: 'opensans-bold', sans-serif;
-    font-size: 3.6rem;
-    color: #313131;
-    line-height: 1.25;
-    margin-bottom: 1.2rem;
-  }
+
   .section-intro h5 {
     color: #F06000;
     font-size: 1.6rem;
@@ -33,7 +33,10 @@ body {
     letter-spacing: .4rem;
   }
 
-
+  .nav-full-pag{
+    height: 100vh;
+    overflow: hidden;
+  }
   .full-page {
     height: 100vh;
     overflow: hidden;
@@ -77,10 +80,9 @@ header .banner-text { width: 100%; }
 
 header .banner-text h1 {
     font: 90px/1.1em 'opensans-bold', sans-serif;
-    color: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 header .banner-text h3 {
@@ -93,8 +95,9 @@ header .banner-text h3 {
 
 header .banner-text h3 span,
 header .banner-text h3 a {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
+
 header .banner-text hr {
     width: 60%;
     margin: 18px auto 24px auto;
@@ -137,4 +140,14 @@ header .social li a:hover { color: #11ABB0; }
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
 header .scrolldown a:hover { color: #11ABB0; }
+
+body {
+    font-family: 'opensans-regular', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #838C95;
+    -webkit-text-size-adjust: 100%;
+  }

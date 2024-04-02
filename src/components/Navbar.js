@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ setIsNavbarActive }) {
   return (
-    <header id="home" className="full-page">
+    <header id="home" className={setIsNavbarActive ? 'full-page opaque' : 'full-page'}>
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
