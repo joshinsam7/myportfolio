@@ -48,7 +48,7 @@ function About({ isNavbarActive }) {
             <div className="about-section">
               <h3>Skills</h3>
               <p>
-                I'm a cell-like independent team worker, strong in research and coding. My areas of expertise are computer science, bioinformatics, and genetics. Below are highlights of my technical skills:
+                My areas of expertise are Computer Science, Front-End Development. Below are highlights of my technical skills:
               </p>
               <ul className="skill-bars">
                 <li>
