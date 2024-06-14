@@ -1,0 +1,32 @@
+{
+    "workExperience": [
+      {
+        "date": "2024-Present",
+        "title": "Computer Science Tutor",
+        "Company": "Varsity Tutors",
+        "description": "Proficient in tutoring Java and C++ programming languages, I develop personalized lesson plans and teaching strategies to accommodate diverse learning styles, facilitate interactive coding exercises and projects, and ensure comprehension and mastery of principles, syntax, concepts, and best practices."
+      },
+      {
+        "date": "2021-2022",
+        "title": "Customer Representative",
+        "Company": "Education At Work",
+        "description": "Providing expert guidance and technical support to Microsoft customers to ensure seamless access and optimal utilization of Microsoft products, I achieved a monthly customer satisfaction rating above 80% and collaborated with colleagues and supervisors to cultivate a productive problem-solving environment through effective communication."
+      }
+    ],
+
+    "education": [
+      {
+        "date": "2021-2025",
+        "title": "Bachelor's Degree",
+        "Company": "Arizona State University",
+        "description": "I'm majoring in Computer science."
+      },
+      {
+        "date": "2021-2025",
+        "title": "Minor Degree",
+        "Company": "Arizona State University",
+        "description": "I'm also pursuing a minor in Business."
+      }
+    ]
+  }
+  

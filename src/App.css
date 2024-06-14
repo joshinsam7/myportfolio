@@ -1,88 +1,95 @@
-body { 
-    background: black; 
-    overflow-x: hidden; 
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    overflow-x: hidden;
 }
 
-.resume_page {
-    background-color: white;
+main {
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content > * {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        display: flex;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content > * {
+        flex: 1;
+        margin: 10px;
+    }
 }
 
 .grey-section {
     background: #ebebeb;
-  }
-  .grey-section p.lead {
-    font-family:'librebaskerville-regular', serif;
+}
+
+.grey-section p.lead {
+    font-family: 'librebaskerville-regular', serif;
     color: #7d7d7d;
-  }
+}
 
-  .section-intro {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 3.6rem;
-    position: relative;
-  }
-
-  .section-intro h5 {
-    color: #F06000;
-    font-size: 1.6rem;
-    line-height: 1.875;
-    margin-bottom: 0.3rem;
-    letter-spacing: .4rem;
-  }
-
-  .nav-full-pag{
-    height: 100vh;
-    overflow: hidden;
-  }
-  .full-page {
+.nav-full-pag, .full-page {
     height: 100vh;
     overflow: hidden;
 }
-/* ------------------------------------------------------------------ /
-/ b. Header Styles
-/* ------------------------------------------------------------------ */
 
 header {
     position: relative;
-    height: 800px;
-    min-height: 500px;
+    min-height: 100vh; 
     width: 100%;
-    background: #161415 url(images/IMG_8583.jpg) no-repeat top center;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    text-align: center;
+    background: url('/public/images/IMG_8583.jpg') no-repeat top center;
+    background-size: cover; 
     overflow: hidden;
-    background-position: center top;
-    background-size: contain;
-    padding: 20px;
-}
+    background-attachment: fixed;
+  }
+  
 
-/* vertically center banner section */
 header:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
+
 header .banner {
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
     width: 85%;
-    padding-bottom: 30px; 
+    padding-bottom: 30px;
     text-align: center;
 }
 
-header .banner-text { width: 100%; }
+header .banner-text {
+    width: 100%;
+}
 
 header .banner-text h1 {
     font: 90px/1.1em 'opensans-bold', sans-serif;
     color: rgb(0, 0, 0);
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
+    padding-left: 90px;
 }
 
 header .banner-text h3 {
@@ -91,6 +98,7 @@ header .banner-text h3 {
     margin: 0 auto;
     width: 70%;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    padding-left: 90px;
 }
 
 header .banner-text h3 span,
@@ -105,23 +113,29 @@ header .banner-text hr {
     border-color: rgba(150, 150, 150, .1);
 }
 
-/* header social links */
+
 header .social {
     margin: 24px 0;
     padding: 0;
     font-size: 30px;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
 }
+
 header .social li {
     display: inline-block;
     margin: 0 15px;
     padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
 
-/* scrolldown link */
-    header .scrolldown a {
+header .social li a {
+    color: #fff;
+}
+
+header .social li a:hover {
+    color: #11ABB0;
+}
+
+header .scrolldown a {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -134,14 +148,12 @@ header .social li a:hover { color: #11ABB0; }
     line-height: 42px;
     color: #fff;
     border-radius: 100%;
-
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover {
+    color: #11ABB0;
+}
 
 body {
     font-family: 'opensans-regular', sans-serif;
@@ -150,4 +162,4 @@ body {
     line-height: 30px;
     color: #838C95;
     -webkit-text-size-adjust: 100%;
-  }
+}

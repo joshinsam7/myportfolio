@@ -25,8 +25,6 @@ function Activities(){
 
             {
             
-            /* Repeat the above block for each activity item */
-            
             }
             
          </div>

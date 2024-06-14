@@ -1,0 +1,65 @@
+.section-intro h5 h1{
+  text-align: center;
+}
+
+.sectionIntro {
+  padding: 80px 20px; /* Existing padding */
+  padding-bottom: 120px; /* Add extra padding to the bottom */
+}
+
+.colTwelve {
+  text-align: center;
+  margin-bottom: 40px; /* Add margin to the bottom of each column */
+}
+
+
+.sectionIntro {
+  background-color: rgb(253, 253, 253) !important;
+}
+
+
+.colTwelve {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.colTwelve p.lead {
+  text-align: center;
+}
+
+.section-intro h5 {
+  color: #F06000;
+  font-size: 3rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: .4rem;
+}
+
+.section-intro h4 {
+  color: #F06000;
+  font-size: 4rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: .4rem;
+}
+
+.colTwelve h5 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: #F06000;
+  font-size: 1.6 rem;
+}
+
+.colTwelve h4 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: #F06000;
+}
+
+.colTwelve p.lead {
+  font-family: "lora-regular", serif;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: #888888;
+}
+

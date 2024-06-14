@@ -1,29 +1,29 @@
 import React from 'react';
 import './About.css';
 
-function About() {
+function About({ isNavbarActive }) {
   return (
-    <section id="about" className="nav-full-page" style={{ paddingTop: '80px', overflowX: 'hidden' }}>
+    <section id="about" className={`nav-full-page ${isNavbarActive ? 'section-active' : ''}`} style={{ paddingTop: '80px', overflowX: 'hidden' }}>
       <div className="row section-intro">
-        <div className="col-twelve">
+        <div className="Acol-twelve">
           <h5>About</h5>
           <h1>Let me introduce myself.</h1>
-          <div className="intro-info">
-              <img src="./images/mypic.jpeg" alt="prof" />
-            <p className="lead">
-              I'm an Computer Science student minoring in Business studying in Arizona State University. My primary interest is frontend development, and currently pursuing to achieve AWS Cloud Practitioner Certification. 
+          <div className="intro-Info">
+            <img src="/public/images/mypic.jpeg" alt="" />
+            <p className="para">
+              I'm a Computer Science student minoring in Business studying at Arizona State University. My primary interest is Software Development, and currently pursuing to achieve AWS Cloud Practitioner Certification.
             </p>
           </div>
         </div>
       </div>
 
       <div className="row about-content">
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-12 profile-section">
           <div className="col-six tab-full">
-            <div class="about-section">
-              <h3>Profile </h3>
+            <div className="about-section">
+              <h3>Profile</h3>
               <p>
-                Currently, I have a job, but am open to new software engineering/product owner/startup opportunities. If you think I'm a good fit, please contact me via <a href="mailto:joshinsam6@gmail.com">joshinsam6@gmail.com</a>.
+                Currently, I have a job, but am open to new software engineering/startup opportunities. If you think I'm a good fit, please contact me via <a href="mailto:joshinsam6@gmail.com">joshinsam6@gmail.com</a>.
               </p>
               <ul className="info-list">
                 <li>
@@ -39,49 +39,44 @@ function About() {
                   <span>joshinsam6@gmail.com</span>
                 </li>
               </ul>
-              </div>
+            </div>
           </div>
         </div>
 
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-12 skills-section">
           <div className="col-six tab-full">
-              <div class="about-section">
-                <h3>Skills</h3>
-                <p>
-                  I'm a cell-like independent team worker, strong in research and coding. My areas of expertise are computer science, bioinformatics, and genetics. Below are highlights of my technical skills:
-                </p>
-                <ul className="skill-bars">
-                  <li>
-                    <div className="progress percent90"><span>90%</span></div>
-                    <strong>MS Suite</strong>
-                  </li>
-                  <li>
-                    <div className="progress percent70"><span>70%</span></div>
-                    <strong>JS/TS/React</strong>
-                  </li>
-                  <li>
-                    <div className="progress percent60"><span>80%</span></div>
-                    <strong>C/C++</strong>
-                  </li>
-                  <li>
-                    <div className="progress percent60"><span>90%</span></div>
-                    <strong>Java</strong>
-                  </li>
-                </ul>
-              </div>
+            <div className="about-section">
+              <h3>Skills</h3>
+              <p>
+                I'm a cell-like independent team worker, strong in research and coding. My areas of expertise are computer science, bioinformatics, and genetics. Below are highlights of my technical skills:
+              </p>
+              <ul className="skill-bars">
+                <li>
+                  <strong>Java</strong>
+                  <div className="progress">
+                    <div className="progress-bar" style={{ width: '90%' }}><span>90%</span></div>
+                  </div>
+                </li>
+                <li>
+                  <strong>C/C++</strong>
+                  <div className="progress">
+                    <div className="progress-bar" style={{ width: '80%' }}><span>80%</span></div>
+                  </div>
+                </li>
+                <li>
+                  <strong>JS/React/CSS</strong>
+                  <div className="progress">
+                    <div className="progress-bar" style={{ width: '70%' }}><span>70%</span></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
-
-      <div className="row button-section">
-        <div className="col-twelve">
-          <a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
-          <a href="files/JoshinSam--II.pdf" title="Download CV" className="button button-primary">Download CV</a>
-        </div>
-      </div>
     </section>
   );
-};
+}
 
 export default About;

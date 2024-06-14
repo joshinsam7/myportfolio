@@ -1,41 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Timeline from './Timeline';
+import styles from './Resume.module.css';
+import data from '../data/data.json';
 
 function Resume() {
+  const [workExperience, setWorkExperience] = useState([]);
+  const [education, setEducation] = useState([]);
+
+  useEffect(() => {
+    setWorkExperience(data.workExperience);
+    setEducation(data.education);
+  }, []);
+
   return (
     <div>
-      <section id="resume" className="full-page resume_page" style={{ paddingTop: '80px', overflowX: 'hidden' }}>
-        <div className="row section-intro">
-          <div className="col-twelve">
+      <section id="resume" className={`full-page ${styles.sectionIntro}`}>
+        <div className="row">
+          <div className={styles.colTwelve}>
             <h5>Resume</h5>
-            <h1>More of my credentials.</h1>
             <p className="lead">Here are my work experiences and education.</p>
-          </div>
-        </div>
-        {/* Additional content for work experiences and education can be added here */}
-
-        <div className="row section-intro">
-          <div className="col-twelve">
-            <h5>Background Education</h5>
-            <h1>More of my credentials.</h1>
-            <p className="lead">Here are my work experiences and education.</p>
-            
+            <h4>Work Experience</h4>
+            <Timeline events={workExperience} />
           </div>
         </div>
 
-        <div className="row resume-timeline">
-          <div className="col-twelve resume-header">
-            <h2>Work Experience</h2>
+        <div className="row">
+          <div className={styles.colTwelve}>
+            <h4>Background Education</h4>
+            <Timeline events={education} />
           </div>
-          {/* Work experience timeline blocks */}
-          {/* Each timeline-block represents a work experience */}
-        </div>
-
-        <div className="row resume-timeline">
-          <div className="col-twelve resume-header">
-            <h2>Background Education</h2>
-          </div>
-          {/* Education timeline blocks */}
-          {/* Each timeline-block represents an educational background */}
         </div>
       </section>
     </div>
